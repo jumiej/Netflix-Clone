@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+}
+
+nav {
+    /* border: 1px solid red; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    /* border: 1px solid red; */
+   
+}
+
+.logo {
+    width: 100px;
+}
+
+.navbar .Nest2logo {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 300px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icons img {
+    width: 20px;
+}
+.poster {
+    width: 100%;
+    background-image: url(images/MoviePoster.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+}
+
+.poster .PosterContent {
+    display: block;
+    position: relative;
+    margin-top: 10%;
+    padding: 5%;
+    /* border: 1px solid yellow; */
+}
+
+.TurkeyRanking {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+.TurkeyRanking p {
+    margin-left: 15px;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+
+.PosterContent .text {
+    font-size: 26px;
+}
+
+.PosterContent .btn {
+    margin-top: 20px;
+}
+
+.btn {
+    display: flex;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 40px;
+    margin-right: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+}
+
+button p {
+    margin-left: 15px;
+}
+
+
+.second-btn {
+  background: rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+}
+
+.PosterContent .text {
+    margin-top: 10px;
+}
+
+.PosterContent .posterImage {
+    display: block;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+}
+
+.posterImage p {
+    margin-bottom: 15px;
+}
+
+.posterImage .row img {
+    width: 300px;
+}
+
+.posterImage .row {
+    display: flex;  
+}
+
+.movies {
+    width: 100%;
+    margin-top: 950px;
+    position: relative;
+    padding: 0 55px;
+    /* border: 5px solid purple; */
+}
+
+.movies .row {
+    display: flex;
+
+}
+
+.movies p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.movies img {
+    width: 100%;
+}
+
+
+/* ..............foooter............... */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    padding: 5px 250px;
+}
+
+/* footer .row img {
+    cursor: pointer;
+} */
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer .media {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer .media2, .media3, .media4, .media5 {
+    margin-left: 10px;
+}
+
+footer .content1 p, .content2 p, .content3 p, .content4 p {
+    margin-bottom: 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+footer button {
+    margin-top: 25px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff ;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+footer .copyWrite {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/* ...............Media-quary............... */
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .navbar .Nest2logo {
+        width: 250%;
+    }
+
+    .logo {
+        width: 70px;
+    }
+
+
+    .poster {
+        /* width: 100%; */
+        /* background-image: cov; */
+    }
+
+    .posterImage .row {
+        display: block;  
+        /* margin-top: 500px; */
+    }
+
+    .PosterContent .posterImage {
+        margin-top: 150px;
+    }
+
+    .PosterContent .posterImage img {
+        width: 420px;
+        margin-bottom: 5px;
+    }
+
+
+    .poster .PosterContent {
+        margin-top: 200px;
+    }
+
+    .PosterContent .posterTittle {
+        width: 250px;
+    }
+    
+    .TurkeyRanking p {
+        font-size: 20px;
+    }
+
+    .PosterContent .text {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+    
+    .movies {
+        margin-top: 1760px;
+    }
+    footer {
+        display: inline-block;
+        justify-content: left;
+        margin-right: 100px;
+    }
+
+    footer .footer-content {
+        display: block;
+        /* padding: 100px; */
+    }
+
+    footer .media {
+        display: flex;
+    }
+    
+}
+
+
+
